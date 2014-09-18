@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <!-- Angular.js, from a content delivery network -->
+    <script src="http://cdn.jsdelivr.net/angularjs/1.2.20/angular.js"></script>
+    
+    <!-- The code for our app -->
+    <script src="directives.js"></script>
+    
+    <!-- Bootstrap styling -->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/bootstrap/3.2.0/css/bootstrap.css" />
+    
+    <div class="container">
+        <h1>GitHub user profile fetcher (Angular.js demo)</h1>
+
+        <p>
+            This demonstrates directives, services, dependency injection, and promises.
+            View the source using your browser's developer tools or at 
+            <a href="https://github.com/wbillingsley/angularjs-demo-1">https://github.com/wbillingsley/angularjs-demo-1</a>
+        </p>
+        <p>
+            Type in the username of a GitHub user, for example wbillingsley, and this app will make
+            a request to GitHub to fetch their public profile and display the returned JSON below.
+        </p>
+
+        <div ng-app="githubprofiles">
+            <profile-fetcher></profile-fetcher>    
+        </div>
+    </div>
+
+</html>
